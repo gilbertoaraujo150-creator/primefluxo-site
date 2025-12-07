@@ -18,30 +18,36 @@
 </head>
 
 <body>
-
-<!-- ====================== META PIXEL NA PRIMEIRA DOBRA ====================== -->
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '652977177799408');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=652977177799408&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<!-- ======================================================================== -->
-
 <div class="container">
 
 <header>
+
+<!-- Meta Pixel Code (otimizado) -->
+<script>
+(function(){
+  if(!window.fbq){
+      var n = window.fbq = function(){ n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+      if(!window._fbq) window._fbq = n;
+      n.push = n; n.loaded = true; n.version = '2.0';
+      n.queue = [];
+  }
+
+  fbq('init', '652977177799408');
+  fbq('track', 'PageView');
+
+  var t = document.createElement('script');
+  t.async = true;
+  t.src = "https://connect.facebook.net/en_US/fbevents.js";
+  document.head.appendChild(t);
+})();
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=652977177799408&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code (otimizado) -->
+
   <div class="tag">Biblioteca Digital • Gospel</div>
   <h1>Biblioteca Gospel LoveGospel</h1>
   <div class="badge-app">📱 O MELHOR APLICATIVO DE MÚSICA GOSPEL</div>
@@ -55,12 +61,11 @@ src="https://www.facebook.com/tr?id=652977177799408&ev=PageView&noscript=1"
        height="420"
        alt="Capa da Biblioteca Gospel LoveGospel com aplicativo de louvores">
 
-  <!-- HEADLINE ATUALIZADA -->
   <p class="head-title">+600 louvores escolhidos para fortalecer sua fé todos os dias.</p>
   <p class="head-sub">Tenha uma galeria completa de louvores organizada, fácil de usar e com acesso vitalício.</p>
 
-  <!-- ANCORAGEM DE PREÇO NA PRIMEIRA DOBRA (ACIMA DO BOTÃO) -->
-  <div style="text-align:center; margin:10px 0 20px 0;">
+  <!-- Ancoragem de preço na primeira dobra (acima do botão) -->
+  <div class="preco-ancoragem-top" style="text-align:center; margin:10px 0 20px 0;">
     <div style="color:#ff3030; font-weight:700; font-size:1rem; text-decoration:line-through;">
       De R$ 29,90
     </div>
@@ -293,8 +298,8 @@ src="https://www.facebook.com/tr?id=652977177799408&ev=PageView&noscript=1"
       </div>
     </div>
 
-    <!-- ANCORAGEM DE PREÇO NA OFERTA (ACIMA DO BOTÃO) -->
-    <div style="text-align:center; margin:10px 0 20px 0;">
+    <!-- Ancoragem de preço na oferta (acima do botão) -->
+    <div class="preco-ancoragem-oferta" style="text-align:center; margin:10px 0 20px 0;">
       <div style="color:#ff3030; font-weight:700; font-size:1rem; text-decoration:line-through;">
         De R$ 29,90
       </div>
