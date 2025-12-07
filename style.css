@@ -317,6 +317,14 @@ hr.linha{
   margin:0 auto 16px;
 }
 
+.garantia-texto{
+  text-align:center;
+  font-size:.95rem;
+  color:var(--cinza);
+  max-width:600px;
+  margin:0 auto;
+}
+
 .depo-grid{
   display:grid;
   grid-template-columns:1fr;
@@ -343,8 +351,10 @@ hr.linha{
   height:90px;
   border-radius:50%;
   object-fit:cover;
-  margin-bottom:8px;
+  object-position:center;
+  margin:0 auto 8px auto;
   border:3px solid var(--azul-claro);
+  display:block;
 }
 
 .depo-nome{
